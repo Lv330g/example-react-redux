@@ -1,0 +1,62 @@
+.popup {
+    &--container {
+        border-radius: 6px;
+        overflow: hidden;
+        min-width: 300px;
+        box-shadow: 0px 0px 25px -10px $dark;
+        margin: 5px;
+    }
+    &--header {
+        background: $dark-blue;
+        color: $light;
+        padding: 10px 15px;
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: $light;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 12px;
+            font-weight: 500;
+            color: $light-grey;
+            margin: 0;                        
+        }
+        .icon-cross { 
+            margin: 5px; 
+            cursor: pointer;
+            font-size: 12px; 
+        }
+    }
+    &--body {
+        background: $light;
+        color: $dark;
+        font-size: 14px;
+        padding: 10px 10px 25px;
+        input, textarea {
+            border: 1px solid $light-grey!important;
+            color: $dark!important;
+            padding: 5px!important;
+        }
+        // should detach to higher level
+        &::-webkit-scrollbar,  *::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+        }
+         
+        &::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
+            background-color: $light;
+            cursor: pointer;
+        }
+        &::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+          background-color: rgba(0,0,0,0.3);
+          border-radius: 15px;
+          cursor: pointer;
+        }
+    }
+    &--footer {
+        background: $cream;
+        padding: 15px;
+    }
+
+}

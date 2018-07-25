@@ -1,0 +1,21 @@
+
+.signin-wrapper {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $dark;
+    padding: 50px;
+}
+.signin-form {
+    width: 400px;
+    input: {
+        color: $light!important;
+    }
+    .error {
+        height: 19px;
+        margin: 5px 0 10px;
+    }
+}

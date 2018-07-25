@@ -1,0 +1,47 @@
+.multiselect--wrapper {
+    padding: 10px 30px 5px 10px;
+    margin: 0 0 15px 0;
+    background: $light;
+    position: relative;
+    cursor: pointer;
+    min-height: 32px;
+    &:after {
+        content: '';
+        background-size: contain;
+        width: 14px;
+        height: 8px;
+        position: absolute;
+        top: 18px;
+        color: $light-grey;
+        right: 15px;
+        transition: transform ease 0.3s;
+        transform: rotate(180deg);
+    }
+    &.opened:after {
+        transform: rotate(0deg);
+    }
+    .placeholder {
+        color: $grey;
+        line-height: 1.8em;
+    }
+    .chip {
+        display: inline-block;
+        margin: 0 5px 0 0;
+        padding: 5px 10px;
+        background: $blue-light-hover;
+        color: $grey;
+        height: 1.2em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 5px;
+        .label, .icon-cross {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon-cross {
+            font-size: 10px;
+            margin: 3px 0 3px 5px;
+            cursor: pointer;
+        } 
+    }
+}

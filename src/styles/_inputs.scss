@@ -1,0 +1,14 @@
+input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
+    transition: all 5000s ease-in-out 0s;
+    transition-property: background-color;
+    background-color: transparent;
+    -webkit-text-fill-color: $light;
+}
+
+.dropdown-list {
+    .dropdown-item {
+        cursor: pointer;
+        padding: 10px 15px;
+        border-bottom: 1px solid $grey;
+    }
+}

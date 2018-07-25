@@ -1,0 +1,27 @@
+@import './styles/variables';
+@import './styles/layout';
+@import './styles/buttons';
+@import './styles/inputs';
+@import './styles/header';
+@import './styles/accordion';
+@import './styles/content';
+@import './styles/popups';
+@import './styles/text';
+
+@import './modules/index';
+@import './shared/elements/index';
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#root {
+    height: auto;
+    min-height: 100%;
+}
+.error {
+    color: #f15d5d;
+}

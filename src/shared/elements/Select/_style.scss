@@ -1,0 +1,49 @@
+.select--label {
+    font-size: 12px;
+    color: $dark;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.select--wrapper {
+    padding: 10px 30px 10px 10px;
+    background: $light;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 1em;
+    white-space: nowrap;
+    &:after {
+        content: '';
+        background-size: contain;
+        width: 14px;
+        height: 8px;
+        position: absolute;
+        top: calc(50% - 4px);
+        right: 15px;
+        transition: transform ease 0.3s;
+        transform: rotate(180deg);
+    }
+    &.opened:after {
+        transform: rotate(0deg);
+    }
+}
+.select--body {
+    border-top: 1px solid $light-grey;
+    padding: 8px;
+    max-height: 250px;
+    overflow: auto;
+}
+.select--item {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+        background: $blue-light-hover;
+    }
+    &.selected {
+        color: $blue;
+    }
+    &.deselect-item {
+        border-top: 1px solid $light-grey;
+    }
+}

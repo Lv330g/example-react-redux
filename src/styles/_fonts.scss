@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+/* 
+  * Our custom generated icons font 
+  * for generating new font you should use https://icomoon.io/app with font name 'overhaul-icons' all icons are located in 'src/Media/font-icons'
+  */
+
+@font-face {
+  font-family: 'overhaul-icons';
+  src:  url('./media/fonts/overhaul-icons.eot?xmbt91');
+  src:  url('./media/fonts/overhaul-icons.eot?xmbt91#iefix') format('embedded-opentype'),
+    url('./media/fonts/overhaul-icons.ttf?xmbt91') format('truetype'),
+    url('./media/fonts/overhaul-icons.woff?xmbt91') format('woff'),
+    url('./media/fonts/overhaul-icons.svg?xmbt91#overhaul-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
